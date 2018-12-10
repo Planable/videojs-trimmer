@@ -1,6 +1,6 @@
 {
   "name": "videojs-trimmer",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "",
   "main": "dist/videojs-trimmer.cjs.js",
   "module": "dist/videojs-trimmer.es.js",
