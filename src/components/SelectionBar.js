@@ -1,9 +1,10 @@
 import videojs from "video.js";
+import { videojsRound } from "../utils";
 
 var videojsComponent = videojs.getComponent("Component");
 
 /**
- * This is the bar with the selection of the RangeSlider
+ * This is the bar with the selection of the Trimmer
  * @param {videojs.Player|Object} player
  * @param {Object=} options
  * @constructor
@@ -17,7 +18,7 @@ var SelectionBar = videojs.extend(videojsComponent, {
     this.fired = false;
   },
   init_: function() {
-    this.rs = this.player_.rangeslider();
+    this.rs = this.player_.trimmer();
   },
 
   createEl: function() {

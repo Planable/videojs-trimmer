@@ -1,4 +1,4 @@
-const generate = require('videojs-generate-rollup-config');
+const generate = require("videojs-generate-rollup-config");
 
 // see https://github.com/videojs/videojs-generate-rollup-config
 // for options

@@ -16,7 +16,7 @@ var ControlTimePanelLeft = videojs.extend(videojsComponent, {
     this.on("keydown", this.onKeyDown);
   },
   init_: function() {
-    this.rs = this.player_.rangeslider();
+    this.rs = this.player_.trimmer();
     this.timeOld = {};
   },
 

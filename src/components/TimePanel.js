@@ -14,7 +14,7 @@ var TimePanel = videojs.extend(videojsComponent, {
     videojsComponent.call(this, player, options);
   },
   init_: function() {
-    this.rs = this.player_.rangeslider();
+    this.rs = this.player_.trimmer();
   },
 
   options_: {

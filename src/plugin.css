@@ -9,7 +9,7 @@
 }
 
 /*Selection Range Slider Bar Selected*/
-.vjs-default-skin .vjs-rangeslider-holder {
+.vjs-default-skin .vjs-trimmer-holder {
   height: 100%;
 }
 
@@ -37,7 +37,7 @@
   opacity: 0.8;
 }
 
-.vjs-default-skin div.vjs-rangeslider-holder.locked > div.vjs-selectionbar-RS {
+.vjs-default-skin div.vjs-trimmer-holder.locked > div.vjs-selectionbar-RS {
   background-color: #ff6565;
   background: #ff6565;
   background: -moz-linear-gradient(top, #ff6565, #300000);
@@ -55,7 +55,7 @@
 }
 
 /*Arrow and Handle*/
-.vjs-default-skin div.vjs-rangeslider-handle {
+.vjs-default-skin div.vjs-trimmer-handle {
   position: absolute;
   margin-top: 0;
   cursor: pointer !important;
@@ -93,14 +93,14 @@
   top: -1em;
 }
 .vjs-default-skin
-  div.vjs-rangeslider-handle.active
+  div.vjs-trimmer-handle.active
   > div.vjs-selectionbar-arrow-RS {
   border-top-color: #5f5fb3;
 }
 
 .vjs-default-skin
-  div.vjs-rangeslider-holder.locked
-  .vjs-rangeslider-handle
+  div.vjs-trimmer-holder.locked
+  .vjs-trimmer-handle
   > div.vjs-selectionbar-arrow-RS {
   border-top-color: #ff6565;
 }
@@ -113,15 +113,13 @@
   position: absolute;
   top: 0em;
 }
-.vjs-default-skin
-  div.vjs-rangeslider-handle.active
-  > div.vjs-selectionbar-line-RS {
+.vjs-default-skin div.vjs-trimmer-handle.active > div.vjs-selectionbar-line-RS {
   background-color: #5f5fb3;
 }
 
 .vjs-default-skin
-  div.vjs-rangeslider-holder.locked
-  .vjs-rangeslider-handle
+  div.vjs-trimmer-holder.locked
+  .vjs-trimmer-handle
   > div.vjs-selectionbar-line-RS {
   background-color: #ff6565;
 }

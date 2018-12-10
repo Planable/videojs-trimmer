@@ -24,7 +24,7 @@ videojs.registerPlugin("basic", basic);
 //Example of options ={hidden:false,locked:true,panel:false}
 var mplayer = videojs("vid1", { inactivityTimeout: 0 });
 mplayer.basic({ customeClass: "hello-world" });
-const rsPlugin = mplayer.rangeslider({ hidden: false });
+const rsPlugin = mplayer.trimmer({ hidden: false });
 console.log({ rsPlugin });
 showhideControlTime();
 disableProgressBar();

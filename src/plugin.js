@@ -49,6 +49,8 @@ class Trimmer extends Plugin {
       this.player.addClass("vjs-trimmer");
     });
 
+    this.init();
+
     ///
 
     const initialVideoFinished = () => {

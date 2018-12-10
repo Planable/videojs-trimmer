@@ -1,6 +1,10 @@
+// @ts-check
+
 import videojs from "video.js";
+import { videojsFormatTime, videojsBlockTextSelection } from "../utils";
 
 var videojsSeekBar = videojs.getComponent("SeekBar");
+var videojsComponent = videojs.getComponent("Component");
 
 /**
  * Seek Range Slider Bar and holder for the selection bars
@@ -16,7 +20,7 @@ var SeekRSBar = videojs.extend(videojsSeekBar, {
     this.on("touchstart", this.onMouseDown);
   },
   init_: function() {
-    this.rs = this.player_.rangeslider();
+    this.rs = this.player_.trimmer();
   },
 
   options_: {
@@ -30,7 +34,7 @@ var SeekRSBar = videojs.extend(videojsSeekBar, {
 
   createEl: function() {
     return videojsComponent.prototype.createEl.call(this, "div", {
-      className: "vjs-rangeslider-holder"
+      className: "vjs-trimmer-holder"
     });
   },
 

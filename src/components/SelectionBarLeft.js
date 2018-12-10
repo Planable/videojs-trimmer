@@ -1,9 +1,14 @@
 import videojs from "video.js";
+import {
+  videojsBlockTextSelection,
+  videojsAddClass,
+  videojsRemoveClass
+} from "../utils";
 
 var videojsComponent = videojs.getComponent("Component");
 
 /**
- * This is the left arrow to select the RangeSlider
+ * This is the left arrow to select the Trimmer
  * @param {videojs.Player|Object} player
  * @param {Object=} options
  * @constructor
@@ -17,12 +22,12 @@ var SelectionBarLeft = videojs.extend(videojsComponent, {
     this.pressed = false;
   },
   init_: function() {
-    this.rs = this.player_.rangeslider();
+    this.rs = this.player_.trimmer();
   },
 
   createEl: function() {
     return videojsComponent.prototype.createEl.call(this, "div", {
-      className: "vjs-rangeslider-handle vjs-selectionbar-left-RS",
+      className: "vjs-trimmer-handle vjs-selectionbar-left-RS",
       innerHTML:
         '<div class="vjs-selectionbar-arrow-RS"></div><div class="vjs-selectionbar-line-RS"></div>'
     });
