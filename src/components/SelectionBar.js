@@ -23,7 +23,7 @@ var SelectionBar = videojs.extend(videojsComponent, {
 
   createEl: function() {
     return videojsComponent.prototype.createEl.call(this, "div", {
-      className: "vjs-selectionbar-RS"
+      className: "vjs-selectionbar-trimmer"
     });
   },
 

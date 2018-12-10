@@ -22,7 +22,7 @@ var ControlTimePanelRight = videojs.extend(videojsComponent, {
 
   createEl: function() {
     return videojsComponent.prototype.createEl.call(this, "div", {
-      className: "vjs-controltimepanel-right-RS",
+      className: "vjs-controltimepanel-right-trimmer",
       innerHTML:
         'End: <input type="text" id="controltimepanel" maxlength="2" value="00"/>:<input type="text" id="controltimepanel" maxlength="2" value="00"/>:<input type="text" id="controltimepanel" maxlength="2" value="00"/>'
     });

@@ -27,9 +27,9 @@ var SelectionBarLeft = videojs.extend(videojsComponent, {
 
   createEl: function() {
     return videojsComponent.prototype.createEl.call(this, "div", {
-      className: "vjs-trimmer-handle vjs-selectionbar-left-RS",
+      className: "vjs-trimmer-handle vjs-selectionbar-left-trimmer",
       innerHTML:
-        '<div class="vjs-selectionbar-arrow-RS"></div><div class="vjs-selectionbar-line-RS"></div>'
+        '<div class="vjs-selectionbar-arrow-trimmer"></div><div class="vjs-selectionbar-line-trimmer"></div>'
     });
   },
 

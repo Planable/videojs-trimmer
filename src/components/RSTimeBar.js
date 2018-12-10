@@ -25,7 +25,7 @@ var RSTimeBar = videojs.extend(videojsComponent, {
 
   createEl: function() {
     return videojsComponent.prototype.createEl.call(this, "div", {
-      className: "vjs-timebar-RS",
+      className: "vjs-timebar-trimmer",
       innerHTML: ""
     });
   }

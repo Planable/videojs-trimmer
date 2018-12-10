@@ -19,7 +19,7 @@ var TimePanelLeft = videojs.extend(videojsComponent, {
 
   createEl: function() {
     return videojsComponent.prototype.createEl.call(this, "div", {
-      className: "vjs-timepanel-left-RS",
+      className: "vjs-timepanel-left-trimmer",
       innerHTML: '<span class="vjs-time-text">00:00</span>'
     });
   }

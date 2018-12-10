@@ -1,5 +1,5 @@
 /*Range Slider Bar Time*/
-.video-js .vjs-timebar-RS {
+.video-js .vjs-timebar-trimmer {
   position: absolute;
   top: -1em;
   left: 0;
@@ -13,7 +13,7 @@
   height: 100%;
 }
 
-.video-js .vjs-selectionbar-RS {
+.video-js .vjs-selectionbar-trimmer {
   height: 100%;
   float: left;
   width: 100%;
@@ -37,7 +37,7 @@
   opacity: 0.8;
 }
 
-.video-js div.vjs-trimmer-holder.locked > div.vjs-selectionbar-RS {
+.video-js div.vjs-trimmer-holder.locked > div.vjs-selectionbar-trimmer {
   background-color: #ff6565;
   background: #ff6565;
   background: -moz-linear-gradient(top, #ff6565, #300000);
@@ -62,25 +62,25 @@
   background-color: transparent;
 }
 
-.video-js .vjs-selectionbar-left-RS {
+.video-js .vjs-selectionbar-left-trimmer {
   height: 100%;
   left: 0;
   z-index: 10;
 }
-.video-js .vjs-selectionbar-right-RS {
+.video-js .vjs-selectionbar-right-trimmer {
   height: 100%;
   left: 100%;
   z-index: 20;
 }
 
-.video-js div.vjs-selectionbar-left-RS,
-.video-js div.vjs-selectionbar-right-RS {
+.video-js div.vjs-selectionbar-left-trimmer,
+.video-js div.vjs-selectionbar-right-trimmer {
   top: 0em;
   position: absolute;
   width: 0em;
 }
 
-.video-js div.vjs-selectionbar-arrow-RS {
+.video-js div.vjs-selectionbar-arrow-trimmer {
   width: 0;
   height: 0;
   border-left: 1em solid transparent;
@@ -92,18 +92,18 @@
   position: absolute;
   top: -1em;
 }
-.video-js div.vjs-trimmer-handle.active > div.vjs-selectionbar-arrow-RS {
+.video-js div.vjs-trimmer-handle.active > div.vjs-selectionbar-arrow-trimmer {
   border-top-color: #5f5fb3;
 }
 
 .video-js
   div.vjs-trimmer-holder.locked
   .vjs-trimmer-handle
-  > div.vjs-selectionbar-arrow-RS {
+  > div.vjs-selectionbar-arrow-trimmer {
   border-top-color: #ff6565;
 }
 
-.video-js div.vjs-selectionbar-line-RS {
+.video-js div.vjs-selectionbar-line-trimmer {
   width: 1px;
   height: 1em;
   background-color: #fff273;
@@ -111,19 +111,19 @@
   position: absolute;
   top: 0em;
 }
-.video-js div.vjs-trimmer-handle.active > div.vjs-selectionbar-line-RS {
+.video-js div.vjs-trimmer-handle.active > div.vjs-selectionbar-line-trimmer {
   background-color: #5f5fb3;
 }
 
 .video-js
   div.vjs-trimmer-holder.locked
   .vjs-trimmer-handle
-  > div.vjs-selectionbar-line-RS {
+  > div.vjs-selectionbar-line-trimmer {
   background-color: #ff6565;
 }
 
 /* Time Panel */
-.video-js .vjs-timepanel-RS {
+.video-js .vjs-timepanel-trimmer {
   width: 100%;
   height: 1em;
   font-weight: bold;
@@ -134,7 +134,7 @@
   opacity: 1;
   transition-delay: 0s;
 }
-.video-js .vjs-timepanel-RS.disable {
+.video-js .vjs-timepanel-trimmer.disable {
   visibility: hidden;
   opacity: 0;
   -webkit-transition: visibility 1s linear 1s, opacity 1s linear;
@@ -143,8 +143,8 @@
   transition: visibility 1s linear 1s, opacity 1s linear;
 }
 
-.video-js .vjs-timepanel-left-RS,
-.video-js .vjs-timepanel-right-RS {
+.video-js .vjs-timepanel-left-trimmer,
+.video-js .vjs-timepanel-right-trimmer {
   font-weight: normal;
   font-size: 1em;
   color: #666666;
@@ -156,21 +156,21 @@
   padding-right: 0.3em;
   padding-left: 0.3em;
 }
-.video-js .vjs-timepanel-left-RS {
+.video-js .vjs-timepanel-left-trimmer {
   left: 0.5%;
 }
-.video-js .vjs-timepanel-right-RS {
+.video-js .vjs-timepanel-right-trimmer {
   left: 92%;
 }
 
 /* Control Time Panel */
-.video-js .vjs-controltimepanel-RS {
+.video-js .vjs-controltimepanel-trimmer {
   width: 18em;
   font-size: 1em;
   line-height: 3em;
 }
 
-.video-js .vjs-controltimepanel-RS input {
+.video-js .vjs-controltimepanel-trimmer input {
   width: 1.5em;
   background: rgba(102, 168, 204, 0.16);
   border: 1px solid transparent;
@@ -181,15 +181,15 @@
   color: white;
 }
 
-.video-js .vjs-controltimepanel-left-RS {
+.video-js .vjs-controltimepanel-left-trimmer {
   width: 50%;
   float: left;
 }
-.video-js .vjs-controltimepanel-right-RS {
+.video-js .vjs-controltimepanel-right-trimmer {
   float: right;
   width: 48%;
 }
-.video-js .vjs-controltimepanel-RS input {
+.video-js .vjs-controltimepanel-trimmer input {
   margin: 0;
   padding: 0;
   display: table-cell;

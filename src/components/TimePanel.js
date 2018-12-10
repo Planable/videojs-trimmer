@@ -26,7 +26,7 @@ var TimePanel = videojs.extend(videojsComponent, {
 
   createEl: function() {
     return videojsComponent.prototype.createEl.call(this, "div", {
-      className: "vjs-timepanel-RS"
+      className: "vjs-timepanel-trimmer"
     });
   }
 });

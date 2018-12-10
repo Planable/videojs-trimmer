@@ -26,7 +26,7 @@ var ControlTimePanel = videojs.extend(videojsComponent, {
 
   createEl: function() {
     return videojsComponent.prototype.createEl.call(this, "div", {
-      className: "vjs-controltimepanel-RS vjs-control"
+      className: "vjs-controltimepanel-trimmer vjs-control"
     });
   },
 
