@@ -1,0 +1,133 @@
+.facebook-skin .vjs-menu-button-inline.vjs-slider-active,.facebook-skin .vjs-menu-button-inline:focus,.facebook-skin .vjs-menu-button-inline:hover,.facebook-skin.vjs-no-flex .vjs-menu-button-inline {
+    width: 10em
+}
+
+.facebook-skin .vjs-big-play-button {
+  transition: none !important;
+}
+
+.facebook-skin .vjs-controls-disabled .vjs-big-play-button {
+    display: none!important
+}
+
+.facebook-skin .vjs-control {
+    width: 3em
+}
+
+.facebook-skin .vjs-menu-button-inline:before {
+    width: 1.5em
+}
+
+.vjs-menu-button-inline .vjs-menu {
+    left: 3em
+}
+
+.vjs-paused.vjs-has-started.facebook-skin .vjs-big-play-button,.facebook-skin.vjs-ended .vjs-big-play-button,.facebook-skin.vjs-paused .vjs-big-play-button {
+    display: block
+}
+
+.facebook-skin .vjs-load-progress div,.vjs-seeking .vjs-big-play-button,.vjs-waiting .vjs-big-play-button {
+    display: none!important
+}
+
+.facebook-skin .vjs-mouse-display:after,.facebook-skin .vjs-play-progress:after {
+    padding: 0 .4em .3em
+}
+
+.facebook-skin.vjs-ended .vjs-loading-spinner {
+    display: none;
+}
+
+.facebook-skin.vjs-ended .vjs-big-play-button {
+    display: block !important;
+}
+
+.video-js.vjs-ended .vjs-big-play-button,.facebook-skin.vjs-paused .vjs-big-play-button,.vjs-paused.vjs-has-started.facebook-skin .vjs-big-play-button {
+    display: block
+}
+
+.facebook-skin .vjs-big-play-button {
+    top: 50%;
+    left: 50%;
+    margin-left: -1.5em;
+    margin-top: -1em
+}
+
+.facebook-skin .vjs-big-play-button {
+    background-color: rgba(0,0,0,0.35);
+    font-size: 3.5em;
+    border-radius: 50%;
+    height: 2em !important;
+    line-height: 2em !important;
+    margin-top: -1em !important
+}
+
+.facebook-skin:hover .vjs-big-play-button,.facebook-skin .vjs-big-play-button:focus,.facebook-skin .vjs-big-play-button:active {
+    background-color: rgba(0,0,0,0.35)
+}
+
+.facebook-skin .vjs-loading-spinner {
+    border-color: rgba(255,255,255,0.7)
+}
+
+.facebook-skin .vjs-control-bar2 {
+    background-color: transparent
+}
+
+.facebook-skin .vjs-control-bar {
+    background: -webkit-linear-gradient(to top, rgba(0, 0, 0, .5), rgba(0, 0, 0, 0));
+    background: -o-linear-gradient(to top, rgba(0, 0, 0, .5), rgba(0, 0, 0, 0));
+    background: -moz-linear-gradient(to top, rgba(0, 0, 0, .5), rgba(0, 0, 0, 0));
+    background: linear-gradient(to top, rgba(0, 0, 0, .5), rgba(0, 0, 0, 0));
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.facebook-skin .vjs-play-progress,.facebook-skin  .vjs-volume-level {
+    background-color: #2483d5;
+}
+
+.facebook-skin .vjs-volume-vertical {
+  background: transparent;
+  bottom: 3em;
+}
+
+.facebook-skin .vjs-slider-vertical {
+  margin: 0 auto;
+  box-shadow: 0 2px 4px rgba(20, 22, 26, .3);
+}
+
+.facebook-skin .vjs-volume-vertical,
+.facebook-skin .vjs-slider-vertical {
+  height: 3em !important;
+}
+
+.facebook-skin .vjs-big-play-button {
+    height: 2em !important;
+    width: 2em !important;
+    line-height: 1.9em !important;
+    margin-top: -1em !important;
+    margin-left: -1em;
+    border-width: 3px;
+}
+
+.facebook-skin .vjs-icon-play:before, .facebook-skin .vjs-big-play-button:before {
+    font-size: 50px;
+}
+
+.facebook-skin  .vjs-progress-holder {
+    font-size: 1.7em;
+    border-radius: 10px;
+}
+
+.facebook-skin .vjs-progress-holder .vjs-play-progress, .facebook-skin .vjs-progress-holder .vjs-load-progress, .facebook-skin .vjs-progress-holder .vjs-load-progress div, .facebook-skin .vjs-slider,.vjs-volume-level {
+    border-radius: 10px;
+}
+
+.facebook-skin .vjs-load-progress {
+    background: rgba(255,255,255,0.5);
+}
+
+.facebook-skin, .facebook-skin video, .vjs-poster, .facebook-skin .vjs-tech {
+    border-radius: 0px !important;
+}

@@ -11,6 +11,11 @@
   display: none !important;
 }
 
+.vjs-timebar-RS {
+  background-color: transparent;
+  top: 0 !important;
+}
+
 /* my stuff up */
 
 .button {

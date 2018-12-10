@@ -1,5 +1,3 @@
-// @ts-check
-
 import videojs from "video.js";
 import { videojsFormatTime, videojsBlockTextSelection } from "../utils";
 
@@ -19,6 +17,7 @@ var SeekRSBar = videojs.extend(videojsSeekBar, {
     this.on("mousedown", this.onMouseDown);
     this.on("touchstart", this.onMouseDown);
   },
+
   init_: function() {
     this.rs = this.player_.trimmer();
   },
@@ -85,7 +84,7 @@ var SeekRSBar = videojs.extend(videojsSeekBar, {
     var writeControlTime =
       typeof writeControlTime != "undefined" ? writeControlTime : true;
     //index = 0 for left side, index = 1 for right side
-    var index = index || 0;
+    index = index || 0;
 
     // Position shouldn't change when handle is locked
     if (this.rs.options.locked) return false;
