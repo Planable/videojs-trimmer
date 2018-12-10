@@ -6,6 +6,7 @@ export { default as RSTimeBar } from "./RSTimeBar";
 export { default as SeekRSBar } from "./SeekRSBar";
 
 export { default as SelectionBar } from "./SelectionBar";
+export { default as SelectionBarProgress } from "./SelectionBarProgress";
 export { default as SelectionBarLeft } from "./SelectionBarLeft";
 export { default as SelectionBarRight } from "./SelectionBarRight";
 

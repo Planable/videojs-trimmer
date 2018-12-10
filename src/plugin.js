@@ -60,6 +60,10 @@ class Trimmer extends Plugin {
         plugin.components[index].init_();
       }
 
+      this.player.on("timeupdate", () => {
+        this.barProgress.update();
+      });
+
       if (plugin.options.hidden) plugin.hide(); //Hide the Range Slider
 
       if (plugin.options.locked) plugin.lock(); //Lock the Range Slider
@@ -134,7 +138,9 @@ class Trimmer extends Plugin {
     //Save local component
     this.rstb = this.components.RSTimeBar;
     this.box = this.components.SeekRSBar = this.rstb.SeekRSBar;
+
     this.bar = this.components.SelectionBar = this.box.SelectionBar;
+    this.barProgress = this.components.SelectionBarProgress = this.bar.SelectionBarProgress;
     this.left = this.components.SelectionBarLeft = this.box.SelectionBarLeft;
     this.right = this.components.SelectionBarRight = this.box.SelectionBarRight;
 

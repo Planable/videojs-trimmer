@@ -17,6 +17,13 @@ var SelectionBar = videojs.extend(videojsComponent, {
     this.on("touchend", this.onMouseUp);
     this.fired = false;
   },
+
+  options_: {
+    children: {
+      SelectionBarProgress: {}
+    }
+  },
+
   init_: function() {
     this.rs = this.player_.trimmer();
   },
@@ -110,6 +117,8 @@ var SelectionBar = videojs.extend(videojsComponent, {
 
   process_loop: function() {
     var player = this.player;
+    console.log("porcess");
+    this.SelectionBarProgress.update();
 
     if (player && this.looping) {
       var current_time = player.currentTime();

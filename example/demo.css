@@ -16,6 +16,10 @@
   top: 0 !important;
 }
 
+.vjs-timepanel-trimmer {
+  display: none;
+}
+
 /* my stuff up */
 
 .button {
