@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>JS RangeSlider Test</title>
+
+    <!-- video-js -->
+    <link href="https://vjs.zencdn.net/7.3.0/video-js.css" rel="stylesheet" />
+    <script src="https://vjs.zencdn.net/7.3.0/video.js"></script>
+
+    <!-- RangeSlider Pluging -->
+
+    <script src="src/rangeslider.js"></script>
+    <link href="build/rangeslider.min.css" rel="stylesheet" />
+
+    <!-- Offset for another video -->
+    <script src="./video-offset.js"></script>
+
+    <!-- Demo CSS -->
+    <link href="demo.css" rel="stylesheet" />
+
+    <link href="./videojs-sublime-skin.css" rel="stylesheet" />
+  </head>
+
+  <body style="margin:10px">
+    <h1 class="title">Range Slider for video-js</h1>
+
+    <video
+      id="vid1"
+      class="video-js vjs-default-skin"
+      controls
+      muted
+      preload="none"
+      autoplay
+      width="640"
+      height="360"
+    >
+      <source src="http://vjs.zencdn.net/v/oceans.mp4" type="video/mp4" />
+      <source src="http://vjs.zencdn.net/v/oceans.webm" type="video/webm" />
+      <source src="http://vjs.zencdn.net/v/oceans.ogv" type="video/ogg" />
+    </video>
+
+    <video
+      id="vid2"
+      class="video-js vjs-sublime-skin"
+      controls
+      muted
+      preload="none"
+      autoplay
+      width="400"
+    >
+      <source src="http://vjs.zencdn.net/v/oceans.mp4" type="video/mp4" />
+      <source src="http://vjs.zencdn.net/v/oceans.webm" type="video/webm" />
+      <source src="http://vjs.zencdn.net/v/oceans.ogv" type="video/ogg" />
+    </video>
+
+    <script src="./index.js"></script>
+
+    <div id="fieldSelection">
+      <legend>Actions</legend>
+      <div class="button" onClick="showhide()">Show/Hide RS</div>
+      <div class="button" onClick="lockunlock()">Lock/Unlock RS</div>
+      <div class="button" onClick="showhidePanel()">show/hide Panel</div>
+      <div class="button" onClick="showhideControlTime()">
+        show/hide ControlTime
+      </div>
+    </div>
+
+    <div id="fieldSelection">
+      <legend>Select a section of the video</legend>
+      <div class="button" onClick="playBetween()">Play Between</div>
+      <div class="button" onClick="loopBetween()">Loop Between</div>
+      <div class="button" onClick="getValues()">Get Arrow Values</div>
+      <br />
+      Start (seconds):<input type="text" value="2" id="Start" /> End (seconds):
+      <input type="text" value="5" id="End" />
+    </div>
+  </body>
+</html>

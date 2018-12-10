@@ -1,0 +1,88 @@
+{
+  "name": "videojs-trimmer",
+  "version": "0.0.0",
+  "description": "",
+  "main": "dist/videojs-trimmer.cjs.js",
+  "module": "dist/videojs-trimmer.es.js",
+  "generator-videojs-plugin": {
+    "version": "7.4.0"
+  },
+  "browserslist": [
+    "defaults",
+    "ie 11"
+  ],
+  "scripts": {
+    "prebuild": "npm run clean",
+    "build": "npm-run-all -p build:*",
+    "build:css": "postcss -o dist/videojs-trimmer.css --config scripts/postcss.config.js src/plugin.css",
+    "build:js": "rollup -c scripts/rollup.config.js",
+    "clean": "shx rm -rf ./dist ./test/dist",
+    "postclean": "shx mkdir -p ./dist ./test/dist",
+    "docs": "npm-run-all docs:*",
+    "docs:api": "jsdoc src -g plugins/markdown -r -d docs/api",
+    "docs:toc": "doctoc README.md",
+    "lint": "vjsstandard",
+    "server": "karma start scripts/karma.conf.js --singleRun=false --auto-watch",
+    "start": "npm-run-all -p server watch",
+    "pretest": "npm-run-all lint build",
+    "test": "npm-run-all test:*",
+    "posttest": "shx cat test/dist/coverage/text.txt",
+    "test:unit": "karma start scripts/karma.conf.js",
+    "test:verify": "vjsverify --verbose",
+    "update-changelog": "conventional-changelog -p videojs -i CHANGELOG.md -s",
+    "preversion": "npm test",
+    "version": "is-prerelease || npm run update-changelog && git add CHANGELOG.md",
+    "watch": "npm-run-all -p watch:*",
+    "watch:css": "npm run build:css -- -w",
+    "watch:js": "npm run build:js -- -w",
+    "prepublishOnly": "npm-run-all build test:verify"
+  },
+  "keywords": [
+    "videojs",
+    "videojs-plugin"
+  ],
+  "author": "Nicu Chiciuc <nicuchiciuc@gmail.com>",
+  "license": "UNLICENSED",
+  "vjsstandard": {
+    "ignore": [
+      "dist",
+      "docs",
+      "test/dist"
+    ]
+  },
+  "files": [
+    "CONTRIBUTING.md",
+    "dist/",
+    "docs/",
+    "index.html",
+    "scripts/",
+    "src/",
+    "test/"
+  ],
+  "husky": {
+    "hooks": {}
+  },
+  "dependencies": {
+    "global": "^4.3.2",
+    "video.js": "^6 || ^7"
+  },
+  "devDependencies": {
+    "conventional-changelog-cli": "^2.0.1",
+    "conventional-changelog-videojs": "^3.0.0",
+    "doctoc": "^1.3.1",
+    "jsdoc": "https://github.com/BrandonOCasey/jsdoc#feat/plugin-from-cli",
+    "karma": "^3.0.0",
+    "not-prerelease": "^1.0.1",
+    "npm-merge-driver-install": "^1.0.0",
+    "npm-run-all": "^4.1.5",
+    "postcss-cli": "^6.0.0",
+    "rollup": "^0.66.0",
+    "shx": "^0.3.2",
+    "sinon": "^6.1.5",
+    "videojs-generate-karma-config": "~3.0.0",
+    "videojs-generate-postcss-config": "~2.0.1",
+    "videojs-generate-rollup-config": "~2.2.0",
+    "videojs-generator-verify": "~1.1.0",
+    "videojs-standard": "^8.0.1"
+  }
+}

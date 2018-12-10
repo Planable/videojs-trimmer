@@ -1,0 +1,42 @@
+videojs-trimmer@0.0.0 /Users/nicu/Dev/videojs-trimmer
+├─┬ UNMET DEPENDENCY global@4.3.2
+│ ├─┬ UNMET DEPENDENCY min-document@2.19.0
+│ │ └── UNMET DEPENDENCY dom-walk@0.1.1
+│ └── UNMET DEPENDENCY process@0.5.2
+├── UNMET DEPENDENCY husky@1.0.1
+├── UNMET DEPENDENCY lint-staged@7.2.2
+├─┬ UNMET DEPENDENCY video.js@7.2.2
+│ ├─┬ UNMET DEPENDENCY @videojs/http-streaming@1.2.4
+│ │ ├─┬ UNMET DEPENDENCY aes-decrypter@3.0.0
+│ │ │ ├── UNMET DEPENDENCY commander@2.18.0
+│ │ │ ├── UNMET DEPENDENCY global@4.3.2
+│ │ │ └── UNMET DEPENDENCY pkcs7@1.0.2
+│ │ ├── UNMET DEPENDENCY global@4.3.2
+│ │ ├── UNMET DEPENDENCY m3u8-parser@4.2.0
+│ │ ├─┬ UNMET DEPENDENCY mpd-parser@0.6.1
+│ │ │ ├── UNMET DEPENDENCY global@4.3.2
+│ │ │ └── UNMET DEPENDENCY url-toolkit@2.1.6
+│ │ ├── UNMET DEPENDENCY mux.js@4.5.1
+│ │ ├── UNMET DEPENDENCY url-toolkit@2.1.6
+│ │ └── UNMET DEPENDENCY video.js@7.2.2
+│ ├─┬ UNMET DEPENDENCY babel-runtime@6.26.0
+│ │ ├── UNMET DEPENDENCY core-js@2.5.7
+│ │ └── UNMET DEPENDENCY regenerator-runtime@0.11.1
+│ ├── UNMET DEPENDENCY global@4.3.2
+│ ├─┬ UNMET DEPENDENCY safe-json-parse@4.0.0
+│ │ └─┬ UNMET DEPENDENCY rust-result@1.0.0
+│ │   └── UNMET DEPENDENCY individual@2.0.0
+│ ├── UNMET DEPENDENCY tsml@1.0.1
+│ ├── UNMET DEPENDENCY videojs-font@3.0.0
+│ ├─┬ UNMET DEPENDENCY videojs-vtt.js@0.14.1
+│ │ └── UNMET DEPENDENCY global@4.3.2
+│ └─┬ UNMET DEPENDENCY xhr@2.4.0
+│   ├── UNMET DEPENDENCY global@4.3.2
+│   ├── UNMET DEPENDENCY is-function@1.0.1
+│   ├─┬ UNMET DEPENDENCY parse-headers@2.0.1
+│   │ ├─┬ UNMET DEPENDENCY for-each@0.3.3
+│   │ │ └── UNMET DEPENDENCY is-callable@1.1.4
+│   │ └── UNMET DEPENDENCY trim@0.0.1
+│   └── UNMET DEPENDENCY xtend@4.0.1
+└── UNMET DEPENDENCY videojs-languages@2.0.0
+
