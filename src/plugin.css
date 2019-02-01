@@ -197,7 +197,8 @@
 
 /* ---------------- Video-js plugin ---------------- */
 
-.video-js *,
+/* This caused the loading spinner to misalign */
+/* .video-js *,
 .video-js *:before,
 .video-js *:after {
   -moz-box-sizing: border-box;
@@ -205,4 +206,4 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-}
+} */

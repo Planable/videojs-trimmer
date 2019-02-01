@@ -430,8 +430,7 @@
 
         this.player_.pause(); //Call end function
 
-        this.player_.currentTime(this.timeEnd);
-        this.suspendPlay();
+        this.player_.currentTime(this.timeEnd); // this.suspendPlay();
       }
     },
     process_loop: function process_loop() {
