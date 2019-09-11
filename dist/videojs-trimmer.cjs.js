@@ -1,4 +1,4 @@
-/*! @name videojs-trimmer @version 0.1.0 @license UNLICENSED */
+/*! @name videojs-trimmer @version 0.1.2 @license UNLICENSED */
 'use strict';
 
 function _interopDefault (ex) { return (ex && (typeof ex === 'object') && 'default' in ex) ? ex['default'] : ex; }
@@ -19,7 +19,7 @@ function _assertThisInitialized(self) {
   return self;
 }
 
-var version = "0.1.0";
+var version = "0.1.2";
 
 var videojsAddClass = function videojsAddClass(element, className) {
   element.classList.add(className);
@@ -428,7 +428,8 @@ var SelectionBar = videojs.extend(videojsComponent$5, {
 
       this.player_.pause(); //Call end function
 
-      this.player_.currentTime(this.timeEnd); // this.suspendPlay();
+      this.player_.currentTime(this.timeEnd);
+      this.suspendPlay();
     }
   },
   process_loop: function process_loop() {
@@ -458,7 +459,6 @@ var videojsComponent$6 = videojs.getComponent("Component");
 var SelectionBarProgress = videojs.extend(videojsComponent$6, {
   /** @constructor */
   constructor: function constructor(player, options) {
-    console.log("frick");
     videojsComponent$6.call(this, player, options);
   },
   init_: function init_() {

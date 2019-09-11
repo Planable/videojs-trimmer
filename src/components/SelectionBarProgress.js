@@ -12,7 +12,6 @@ var videojsComponent = videojs.getComponent("Component");
 var SelectionBarProgress = videojs.extend(videojsComponent, {
   /** @constructor */
   constructor: function(player, options) {
-    console.log("frick");
     videojsComponent.call(this, player, options);
   },
 
