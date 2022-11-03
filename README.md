@@ -58,10 +58,3 @@ require(['video.js', 'videojs-trimmer'], function(videojs) {
   player.trimmer();
 });
 ```
-
-## License
-
-UNLICENSED. Copyright (c) Nicu Chiciuc &lt;nicuchiciuc@gmail.com&gt;
-
-
-[videojs]: http://videojs.com/
